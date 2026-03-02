@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ambar Ansari | Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 * {
@@ -19,70 +19,75 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background: linear-gradient(to bottom, #ffffff, #f3f4f6);
-    color: #1f1f1f;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #fdfaf6, #f5efe6);
+    color: #3a3a3a;
     line-height: 1.6;
 }
 
+/* NAVBAR */
 nav {
     display: flex;
     justify-content: space-between;
     padding: 20px 10%;
-    background: #ffffff;
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(8px);
     position: sticky;
     top: 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    z-index: 1000;
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
-    margin-left: 20px;
+    color: #6b4f3a;
+    margin-left: 25px;
     font-weight: 500;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #2563eb;
+    color: #a47551;
 }
 
+/* HERO */
 header {
     padding: 120px 10%;
-    background: #f8fafc;
+    text-align: left;
 }
 
 header h1 {
-    font-size: 44px;
+    font-size: 48px;
+    color: #4b3f32;
 }
 
 header p {
     margin-top: 15px;
-    max-width: 600px;
+    max-width: 650px;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 25px;
-    padding: 12px 24px;
-    background: #2563eb;
+    margin-top: 30px;
+    padding: 12px 28px;
+    background: #a47551;
     color: white;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 30px;
     font-weight: 600;
     transition: 0.3s;
 }
 
 .btn:hover {
-    background: #1d4ed8;
-    transform: translateY(-2px);
+    background: #8c5e3c;
+    transform: translateY(-3px);
 }
 
+/* SECTIONS */
 section {
-    padding: 80px 10%;
+    padding: 90px 10%;
     opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
 }
 
 section.show {
@@ -91,46 +96,51 @@ section.show {
 }
 
 h2 {
-    margin-bottom: 30px;
-    font-size: 28px;
+    margin-bottom: 35px;
+    font-size: 30px;
+    color: #4b3f32;
 }
 
+/* PROJECT CARDS */
 .projects {
     display: grid;
-    gap: 20px;
+    gap: 25px;
 }
 
 .project-card {
     background: #ffffff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-    transition: 0.3s;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+    transition: 0.4s;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.08);
 }
 
+/* SKILLS */
 .skills span {
     display: inline-block;
-    background: #e5e7eb;
-    padding: 8px 14px;
-    margin: 6px;
-    border-radius: 20px;
+    background: #ede0d4;
+    padding: 10px 16px;
+    margin: 8px;
+    border-radius: 30px;
     font-size: 14px;
     transition: 0.3s;
 }
 
 .skills span:hover {
-    background: #2563eb;
+    background: #a47551;
     color: white;
 }
 
+/* FOOTER */
 footer {
     text-align: center;
-    padding: 40px;
-    background: #f8fafc;
+    padding: 50px;
+    background: #f1e3d3;
     margin-top: 40px;
 }
 </style>
@@ -151,8 +161,8 @@ footer {
 <header>
 <h1>Ambar Ansari</h1>
 <p><strong>Frontend Developer Intern</strong></p>
-<p>Bachelor’s student in Software Development passionate about building clean, responsive and user-friendly web applications. Currently exploring modern development workflows and AI-assisted tools.</p>
-<a href="#projects" class="btn">View My Work</a>
+<p>Bachelor’s student in Software Development who is currently learning to build clean, responsive and user-friendly web applications. Exploring modern development tools and improving skills every day.</p>
+<a href="#projects" class="btn">Explore My Work</a>
 </header>
 
 <section id="projects">
@@ -198,13 +208,13 @@ footer {
 
 <section id="about">
 <h2>About & Experience</h2>
-<p>Bachelor’s student in Software Development currently working as a Frontend Intern. Experienced in building responsive web interfaces and managing projects using GitHub and modern development practices.</p>
+<p>Bachelor’s student in Software Development currently working as a Frontend Intern. Actively learning modern web development practices and improving technical skills through projects and experimentation.</p>
 </section>
 
 <section id="contact">
 <h2>Contact</h2>
 <p>Email: <a href="mailto:ambaransari17@gmail.com">ambaransari17@gmail.com</a></p>
-<p>GitHub: <a href="https://github.com/ambar-ansari" target="_blank">https://github.com/ambar-ansari</a></p>
+<p>GitHub: <a href="https://github.com/ambar-ansari" target="_blank">github.com/ambar-ansari</a></p>
 </section>
 
 <footer>
