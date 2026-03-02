@@ -1,98 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Ambar Ansari | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
-            color: #333;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ambar Ansari | Portfolio</title>
 
-        header {
-            text-align: center;
-            padding: 80px 20px;
-            background-color: #f5f5f5;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        section {
-            padding: 60px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        h1, h2 {
-            margin-bottom: 20px;
-        }
+body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1f1f1f;
+    line-height: 1.6;
+}
 
-        .project {
-            margin-bottom: 30px;
-            padding: 20px;
-            background: #fafafa;
-            border-radius: 8px;
-        }
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+}
 
-        footer {
-            text-align: center;
-            padding: 30px;
-            background: #f5f5f5;
-        }
-    </style>
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+header {
+    padding: 100px 10%;
+    background: #f8f9fb;
+}
+
+header h1 {
+    font-size: 42px;
+}
+
+header p {
+    margin-top: 15px;
+    max-width: 600px;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.projects {
+    display: grid;
+    gap: 20px;
+}
+
+.project-card {
+    background: #f3f4f6;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.skills span {
+    display: inline-block;
+    background: #e5e7eb;
+    padding: 8px 14px;
+    margin: 6px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #f8f9fb;
+    margin-top: 40px;
+}
+</style>
 </head>
+
 <body>
 
+<nav>
+<div><strong>Ambar</strong></div>
+<div>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
 <header>
-    <h1>Ambar Ansari</h1>
-    <p>Frontend Developer Intern</p>
-    <p>Passionate about building clean, responsive and user-friendly web interfaces.</p>
+<h1>Ambar Ansari</h1>
+<p><strong>Frontend Developer Intern</strong></p>
+<p>Passionate about building clean, responsive and user-friendly web interfaces. Currently exploring modern development workflows and AI-assisted tools.</p>
 </header>
 
-<section>
-    <h2>Projects</h2>
+<section id="projects">
+<h2>Projects</h2>
+<div class="projects">
 
-    <div class="project">
-        <h3>Cricket Team Website</h3>
-        <p>A responsive website showcasing a local cricket team.</p>
-        <p><strong>Tech Stack:</strong> HTML, CSS</p>
-        <p><strong>Role:</strong> Frontend Developer</p>
-    </div>
+<div class="project-card">
+<h3>Cricket Team Website</h3>
+<p>Responsive website showcasing a local cricket team with player details and match highlights.</p>
+<p><strong>Tech Stack:</strong> HTML, CSS</p>
+<p><strong>Role:</strong> Frontend Developer</p>
+</div>
 
-    <div class="project">
-        <h3>Food Landing Page</h3>
-        <p>A modern landing page with aesthetic UI.</p>
-        <p><strong>Tech Stack:</strong> HTML, CSS</p>
-        <p><strong>Role:</strong> Web Designer & Developer</p>
-    </div>
+<div class="project-card">
+<h3>Food Landing Page</h3>
+<p>Modern landing page with structured layout and aesthetic UI design.</p>
+<p><strong>Tech Stack:</strong> HTML, CSS</p>
+<p><strong>Role:</strong> Designer & Developer</p>
+</div>
 
-    <div class="project">
-        <h3>To-Do List App</h3>
-        <p>A simple task management app with JavaScript functionality.</p>
-        <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
-        <p><strong>Role:</strong> Frontend Developer</p>
-    </div>
+<div class="project-card">
+<h3>To-Do List App</h3>
+<p>Simple task manager built using JavaScript to add and manage daily tasks.</p>
+<p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+<p><strong>Role:</strong> Frontend Developer</p>
+</div>
+
+</div>
 </section>
 
-<section>
-    <h2>Skills</h2>
-    <p>HTML, CSS, JavaScript, Git, Responsive Design, Communication Skills</p>
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>Git & GitHub</span>
+<span>Responsive Design</span>
+<span>Communication Skills</span>
+</div>
 </section>
 
-<section>
-    <h2>About</h2>
-    <p>Student at TISS pursuing Communication Skills. Currently working as a Frontend Intern and exploring modern web development workflows.</p>
+<section id="about">
+<h2>About & Experience</h2>
+<p>Student at TISS pursuing Communication Skills. Currently working as a Frontend Intern. Experienced in building responsive static websites and exploring AI-assisted development workflows.</p>
 </section>
 
-<section>
-    <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
-    <p>GitHub: https://github.com/ambar-ansari</p>
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: your-email@example.com</p>
+<p>GitHub: https://github.com/ambar-ansari</p>
 </section>
 
 <footer>
-    <p>© 2026 Ambar Ansari</p>
+<p>© 2026 Ambar Ansari</p>
 </footer>
 
 </body>
